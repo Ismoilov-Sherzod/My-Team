@@ -1,0 +1,26 @@
+.site-header{
+     background: #014E56;
+     height: 100vh;
+    
+}
+.navbar{
+    @include display($display:flex, $items:center, $space:space-between, $gap:0px)
+}
+.navbar__title{
+    @include display($display:flex, $items:center, $space:space-between, $gap:0px);
+    margin-right: 600px;
+    
+    
+}
+.navbar__text{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    color: #fff;
+}
+
+.navbar__btn{
+    @include btnStyle($W:140px, $PY:9px, $BorderColor:none, $BgColor:white, $BtnFS:18px, $BtnFW:600, $BtnLH:28px,$BtnMB:0px, $BtnTextColor:black, $HoverBG:none, $HoverColor:none:)
+
+
+}
