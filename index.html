@@ -12,21 +12,23 @@
     <header class="site-header">
         <div class="container">
             <div class="header">
-                <nav class="navbar">
-                    <div class="navbar__logo">
-                        <img src="./images/myteam logo.svg" alt="">
-                    </div>
-                    <div class="navbar__title">
-                        <ul class="navbar__text">
-                            <a href="#">
-                                <li>Home</li></a>
-                            <a href="#">
-                                <li>About</li>
-                            </a>
-                        </ul>
-                    </div>
-                    <button class="navbar__btn">contact us</button>
-                </nav>
+                <div class="header__logo-navbar-wrapper">
+                <a class="header__logo-link" href="#">
+                    <img class="header__logo-img" src="./images/myteam logo.svg" alt="logo" width="160" height="40">
+                </a>
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a class="header__link" href="#">Home</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link" href="#">About</a>
+                    </li>
+                </ul>
+                </div>
+                <a class="header__contact-link" href="#">contact us</a>
+                <button class="header__hamburger-btn">
+                    <img src="./images/hamburger.svg" alt="hamburger" width="20" height="17">
+                </button> 
             </div>
         </div>
     </header>
@@ -35,7 +37,17 @@
         <!-- Hero section  -->
         <section class="hero-section">
             <div class="container">
-                <div class="hero"></div>
+                <div class="hero">
+                    <div class="hero__title-wrapper">
+                        <h2 class="hero__title">
+                            Find the best <span class="hero__title hero__title-color">talent</span>
+                        </h2>
+                    </div>
+                    <div class="hero__text-wrapper">
+                        <span class="hero__text-top-line"></span>
+                        <p class="hero__text">Finding the right people and building high performing teams can be hard. Most companies aren’t tapping into the abundance of global talent. We’re about to change that.</p>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- Hero section  -->

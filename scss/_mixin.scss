@@ -1,5 +1,5 @@
-@mixin display($display, $items, $space, $gap){
-    display: $display;
+@mixin display( $items, $space, $gap){
+    display: flex;
     align-items: $items;
     justify-content: $space;
     gap: $gap;

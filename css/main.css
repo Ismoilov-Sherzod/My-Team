@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: cursive;
+  background-color: #014E56;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -21,45 +26,55 @@
 }
 
 .container {
-  max-width: 1110px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
 .site-header {
-  background: #014E56;
-  height: 100vh;
+  padding: 73px 0 128px;
 }
 
-.navbar {
+.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 0px;
 }
 
-.navbar__title {
+.header__logo-navbar-wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 0px;
-  margin-right: 600px;
+  justify-content: start;
+  gap: 80px;
 }
 
-.navbar__text {
+.header__logo-link {
+  display: inline-block;
+}
+
+.header__list {
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  justify-content: start;
   gap: 40px;
+}
+
+.header__link {
+  margin-bottom: 0px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
   color: #fff;
 }
 
-.navbar__btn {
+.header__contact-link {
   display: inline-block;
-  width: 140px;
-  padding: 9px 0;
+  width: 153px;
+  padding: 10px 0;
   border-radius: 30px;
-  border: 2px solid white;
-  background-color: white;
+  border: 2px solid #fff;
+  background-color: transparent;
   text-align: center;
   cursor: pointer;
   transition: all 0.3s linear;
@@ -67,9 +82,166 @@
   font-size: 18px;
   font-weight: 600;
   line-height: 28px;
-  color: white;
+  color: #fff;
 }
-.navbar__btn:hover {
-  background-color: none;
-  color: white;
+.header__contact-link:hover {
+  background-color: #fff;
+  color: #014E56;
+}
+
+.header__hamburger-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .site-header {
+    padding: 64px 0 112px;
+  }
+  .header__logo-img {
+    width: 128px;
+    height: 32px;
+  }
+  .header__logo-navbar-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 48px;
+  }
+}
+@media (max-width: 600px) {
+  .site-header {
+    padding: 48px 0 80px;
+  }
+  .header__logo-img {
+    width: 128px;
+    height: 32px;
+  }
+  .header__list {
+    display: none;
+  }
+  .header__logo-navbar-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 0px;
+  }
+  .header__contact-link {
+    display: none;
+  }
+  .header__hamburger-btn {
+    display: block;
+  }
+}
+.hero-section {
+  background-image: url(../images/1\ \(2\).svg);
+  background-repeat: no-repeat;
+  background-size: 200px 200px;
+  background-position: calc(50% - 741px) top;
+}
+
+.hero {
+  padding-bottom: 250px;
+  background-image: url(../images/2.svg);
+  background-repeat: no-repeat;
+  background-size: 358px 100px;
+  background-position: right bottom;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0px;
+}
+
+.hero__title-wrapper {
+  max-width: 635px;
+}
+
+.hero__title {
+  margin-bottom: 0px;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 100px;
+  color: #fff;
+}
+
+.hero__title-color {
+  color: #F67E7E;
+}
+
+.hero__text-wrapper {
+  max-width: 445px;
+}
+
+.hero__text-top-line {
+  margin-bottom: 79px;
+  display: inline-block;
+  width: 50px;
+  height: 4px;
+  background-color: #79C8C7;
+}
+
+.hero__text {
+  margin-bottom: 0px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #fff;
+}
+
+@media (max-width: 800px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 24px;
+    background-position: center bottom;
+  }
+  .hero__text-top-line {
+    display: none;
+  }
+  .hero__title {
+    margin-bottom: 0px;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #fff;
+  }
+  .hero__text {
+    margin-bottom: 0px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #fff;
+  }
+  .hero__title-color {
+    color: #F67E7E;
+  }
+}
+@media (max-width: 600px) {
+  .hero {
+    padding-bottom: 197px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 18px;
+  }
+  .hero__title {
+    margin-bottom: 0px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #fff;
+  }
+  .hero__title-color {
+    color: #F67E7E;
+  }
+}
+@media (max-width: 400px) {
+  .hero {
+    background-size: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */
